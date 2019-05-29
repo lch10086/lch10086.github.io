@@ -96,17 +96,17 @@
 
 
 
-  <meta name="description" content="今天第一次自己弄好了这个博客,从搭建到部署，自己又搞一遍,感觉很开心。从此我将开始写博客,希望我的技术会越来越好,找到一份心意的工作。date: 2019-05-22 19：10">
+  <meta name="description" content="什么是并查集个人理解：并查集就是对集合三种常用操作的再一次抽象。分别是集合的合并,元素的搜索,和对集合的分解.因为这三中操作非常常用并且又不囿于集合，所以这一组操作抽象成一个独立的数据结构。 并查集作用我写的这个并查集是为了学习Kruskal算法,而我写的这个作用就是判断两点之间是否存在连同状态。以为学习Kruskal打下基础。 代码块1234567891011121314151617181920">
 <meta property="og:type" content="article">
-<meta property="og:title" content="今天的总结">
-<meta property="og:url" content="http://yoursite.com/2019/05/19/总结/index.html">
+<meta property="og:title" content="并查集">
+<meta property="og:url" content="http://yoursite.com/2019/05/29/并查集/index.html">
 <meta property="og:site_name" content="李超航">
-<meta property="og:description" content="今天第一次自己弄好了这个博客,从搭建到部署，自己又搞一遍,感觉很开心。从此我将开始写博客,希望我的技术会越来越好,找到一份心意的工作。date: 2019-05-22 19：10">
+<meta property="og:description" content="什么是并查集个人理解：并查集就是对集合三种常用操作的再一次抽象。分别是集合的合并,元素的搜索,和对集合的分解.因为这三中操作非常常用并且又不囿于集合，所以这一组操作抽象成一个独立的数据结构。 并查集作用我写的这个并查集是为了学习Kruskal算法,而我写的这个作用就是判断两点之间是否存在连同状态。以为学习Kruskal打下基础。 代码块1234567891011121314151617181920">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-28T08:56:01.627Z">
+<meta property="og:updated_time" content="2019-05-29T10:03:35.197Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="今天的总结">
-<meta name="twitter:description" content="今天第一次自己弄好了这个博客,从搭建到部署，自己又搞一遍,感觉很开心。从此我将开始写博客,希望我的技术会越来越好,找到一份心意的工作。date: 2019-05-22 19：10">
+<meta name="twitter:title" content="并查集">
+<meta name="twitter:description" content="什么是并查集个人理解：并查集就是对集合三种常用操作的再一次抽象。分别是集合的合并,元素的搜索,和对集合的分解.因为这三中操作非常常用并且又不囿于集合，所以这一组操作抽象成一个独立的数据结构。 并查集作用我写的这个并查集是为了学习Kruskal算法,而我写的这个作用就是判断两点之间是否存在连同状态。以为学习Kruskal打下基础。 代码块1234567891011121314151617181920">
 
 
 
@@ -114,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/19/总结/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/29/并查集/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>今天的总结 | 李超航</title>
+  <title>并查集 | 李超航</title>
   
 
 
@@ -340,7 +340,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/19/总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/29/并查集/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李超航">
@@ -357,7 +357,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">今天的总结
+          <h1 class="post-title" itemprop="name headline">并查集
 
               
             
@@ -383,24 +383,12 @@
                 
               
 
-              <time title="创建时间：2019-05-19 20:12:25" itemprop="dateCreated datePublished" datetime="2019-05-19T20:12:25+08:00">2019-05-19</time>
+              <time title="创建时间：2019-05-29 17:39:26 / 修改时间：18:03:35" itemprop="dateCreated datePublished" datetime="2019-05-29T17:39:26+08:00">2019-05-29</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-28 16:56:01" itemprop="dateModified" datetime="2019-05-28T16:56:01+08:00">2019-05-28</time>
               
             
           </span>
@@ -434,8 +422,9 @@
       
 
       
-        <p>今天第一次自己弄好了这个博客,从搭建到部署，自己又搞一遍,感觉很开心。从此我将开始写博客,希望我的技术会越来越好,找到一份心意的工作。<br>date: 2019-05-22 19：10</p>
-
+        <h1 id="什么是并查集"><a href="#什么是并查集" class="headerlink" title="什么是并查集"></a>什么是并查集</h1><p>个人理解：并查集就是对集合三种常用操作的再一次抽象。分别是集合的合并,元素的搜索,和对集合的分解.因为这三中操作非常常用并且又不囿于集合，所以这一组操作抽象成一个独立的数据结构。</p>
+<h1 id="并查集作用"><a href="#并查集作用" class="headerlink" title="并查集作用"></a>并查集作用</h1><p>我写的这个并查集是为了学习Kruskal算法,而我写的这个作用就是判断两点之间是否存在连同状态。以为学习Kruskal打下基础。</p>
+<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int MAX=1e5+2;</span><br><span class="line">int fa[MAX];</span><br><span class="line">void build(int n)</span><br><span class="line">&#123;</span><br><span class="line">    for(int i=1;i&lt;=n;++i)</span><br><span class="line">    &#123;</span><br><span class="line">        fa[i]=i;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">int Find (int m)</span><br><span class="line">&#123;</span><br><span class="line">    return fa[m]==m?m:fa[m]=Find(fa[m]);</span><br><span class="line">&#125;</span><br><span class="line">bool chek(int x,int y)</span><br><span class="line">&#123;</span><br><span class="line">    return Find(x)==Find(y);</span><br><span class="line">&#125;</span><br><span class="line">void merge(int x,int y)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    if(!chek(x,y))</span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        fa[fa[x]]=fa[y];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line"> int x,y;</span><br><span class="line">    int n;</span><br><span class="line">    cin&gt;&gt;n;//输入N个点</span><br><span class="line">    build(n);</span><br><span class="line">    int p;//输入P条边</span><br><span class="line">    cin&gt;&gt;p;</span><br><span class="line">    while(p--)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">        merge(x,y);</span><br><span class="line">    &#125;</span><br><span class="line">    int q;</span><br><span class="line">    cin&gt;&gt;q;</span><br><span class="line">    while(q--)</span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        int x,y;</span><br><span class="line">        cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line">        if(chek(x,y))</span><br><span class="line">        &#123;</span><br><span class="line">            cout&lt;&lt;&quot;Yes&quot;&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        else cout&lt;&lt;&quot;No&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -465,15 +454,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/05/23/二分法/" rel="next" title="二分法">
+                <i class="fa fa-chevron-left"></i> 二分法
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/23/二分法/" rel="prev" title="二分法">
-                二分法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -517,8 +506,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -579,6 +577,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是并查集"><span class="nav-number">1.</span> <span class="nav-text">什么是并查集</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#并查集作用"><span class="nav-number">2.</span> <span class="nav-text">并查集作用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码块"><span class="nav-number">3.</span> <span class="nav-text">代码块</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
